@@ -1,10 +1,18 @@
-import { useState } from 'react'
+import { Post } from './Post'
 
-function App() {
+import './Styles.css'
+import { Header } from './components/Header'
+
+export function App() {
 
   return (
-    <h1>Hello world</h1>
+    <div>
+      <Header />
+      <Post
+        author="Saulo Gananca"
+        content="Lorem Ipsum"
+      />
+
+    </div>
   )
 }
-
-export default App
